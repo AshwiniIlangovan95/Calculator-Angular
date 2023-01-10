@@ -1,0 +1,15 @@
+<div class="title-img">
+  <img src="../assets/calculator1.png">
+  <!-- <h1>CALCULATOR</h1> -->
+</div>
+
+
+<div class="container">
+  <div ><input  [(ngModel)]="val" type="text"disabled> </div>
+  <div ><input type="text"value={{this.result}} disabled></div>
+ 
+  
+  <div class="keypad-num">
+    <button class="neon-button" (click)="calc($event)" *ngFor="let button of buttons">{{button}}</button>
+  </div>  
+    
